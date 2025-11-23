@@ -73,6 +73,34 @@ h2.company-title {
   vertical-align: top;
 }
 
+/* Hours list alignment */
+.row.hours {
+  display: flex;
+  align-items: flex-start;
+}
+
+.hours-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.hours-list li {
+  display: flex;
+  gap: 10px;
+}
+
+.hour-day {
+  min-width: 60px;
+  font-weight: 600;
+}
+
+.hour-time {
+  flex: 1;
+}
+
 a {
   color: var(--accent);
   text-decoration: none;
@@ -86,43 +114,3 @@ a:hover {
   font-style: italic;
   opacity: 0.7;
 }
-.row.hours {
-  display: flex;
-  align-items: flex-start;   /* align the label with the first row of hours */
-}
-.row.hours {
-  display: flex;
-  align-items: flex-start; /* aligns label with first hour line */
-}
-
-.row.hours .label {
-  min-width: 110px;      /* left column width */
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--muted);
-}
-
-.hours-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.hours-list li {
-  display: flex;
-  gap: 10px;             /* space between weekday and time */
-}
-
-.hour-day {
-  min-width: 60px;        /* fixes width so all weekdays align */
-  font-weight: 600;
-}
-
-.hour-time {
-  flex: 1;                /* take remaining space */
-}
-
