@@ -70,6 +70,7 @@ h2.company-title {
   font-size: 12px;
   font-weight: 700;
   color: var(--muted);
+  vertical-align: top;
 }
 
 a {
@@ -84,4 +85,27 @@ a:hover {
 .italic {
   font-style: italic;
   opacity: 0.7;
+}
+
+/* Hours list alignment */
+.hours-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.hours-list li {
+  display: flex;
+  gap: 8px;  /* space between weekday and time */
+}
+
+.hour-day {
+  min-width: 60px; /* align weekdays */
+  font-weight: 600;
+}
+
+.hour-time {
+  flex: 1; /* align times in second column */
 }
