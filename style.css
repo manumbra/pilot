@@ -9,11 +9,15 @@
   font-family: Inter, system-ui, sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: var(--bg);
   color: var(--fg);
   margin: 0;
-  padding: 40px;
+  padding: 20px;
   line-height: 1.6;
 }
 
@@ -46,7 +50,7 @@ h2.company-title {
 .tile {
   width: 100%;
   background: var(--card);
-  padding: 26px;
+  padding: 20px;
   margin: 15px 0;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -63,26 +67,20 @@ h2.company-title {
   margin: 5px 0;
 }
 
-.label {
-  display: inline-block;
-  min-width: 110px;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--muted);
-  vertical-align: top;
+.row a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.row a:hover {
+  text-decoration: underline;
 }
 
 /* Hours list alignment */
-.row.hours {
-  display: flex;
-  align-items: flex-start;
-}
-
 .hours-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 8px 0 0 0;
   display: flex;
   flex-direction: column;
 }
@@ -101,16 +99,7 @@ h2.company-title {
   flex: 1;
 }
 
-a {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.italic {
-  font-style: italic;
-  opacity: 0.7;
-}
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  body {
+    pad
