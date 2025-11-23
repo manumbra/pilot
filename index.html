@@ -11,12 +11,11 @@
     <h1>Dresden Car Rental Stations</h1>
     <p class="lead">Grouped by company. Addresses link to Google Maps. Italic entries are approximated.</p>
 
-    <!-- Container where JS will inject the tiles -->
+    <!-- Container for tiles -->
     <div id="stations"></div>
   </div>
 
   <script>
-    // Fetch stations.json and build tiles dynamically
     fetch('stations.json')
       .then(res => res.json())
       .then(data => {
@@ -29,7 +28,7 @@
           grouped[station.company].push(station);
         });
 
-        // Build HTML tiles
+        // Build tiles
         for (const company in grouped) {
           const h2 = document.createElement('h2');
           h2.textContent = company;
@@ -39,21 +38,20 @@
           grouped[company].forEach(station => {
             const div = document.createElement('div');
             div.className = 'tile';
+
             div.innerHTML = `
               <h3>${station.name}</h3>
-              <div class="row"><span class="label">Address:</span> <a href="${station.maps_link}" target="_blank">${station.address}</a></div>
-              <div class="row"><span class="label">Phone:</span> ${station.phone}</div>
+
+              <div class="row">
+                <span class="label">Address:</span> 
+                <a href="${station.maps_link}" target="_blank">${station.address}</a>
+              </div>
+
+              <div class="row">
+                <span class="label">Phone:</span> ${station.phone}
+              </div>
+
               <div class="row">
                 <span class="label">Hours:</span>
-                <div style="display:inline-block">
-                  ${station.hours.split(';').map(h => `<div>${h.trim()}</div>`).join('')}
-                </div>
-              </div>
-            `;
-            container.appendChild(div);
-          });
-        }
-      });
-  </script>
-</body>
-</html>
+                <ul class="hours-list">
+                  ${station.hours.split(';').map(h =>
