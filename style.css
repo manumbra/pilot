@@ -90,9 +90,13 @@ a:hover {
   display: flex;
   align-items: flex-start;   /* align the label with the first row of hours */
 }
+.row.hours {
+  display: flex;
+  align-items: flex-start; /* aligns label with first hour line */
+}
 
 .row.hours .label {
-  min-width: 110px;          /* width of left column */
+  min-width: 110px;      /* left column width */
   display: inline-block;
   text-transform: uppercase;
   font-size: 12px;
@@ -102,22 +106,23 @@ a:hover {
 
 .hours-list {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
 }
 
 .hours-list li {
   display: flex;
-  gap: 8px;                /* space between weekday and time */
+  gap: 10px;             /* space between weekday and time */
 }
 
 .hour-day {
-  min-width: 60px;          /* align weekdays */
+  min-width: 60px;        /* fixes width so all weekdays align */
   font-weight: 600;
 }
 
 .hour-time {
-  flex: 1;                  /* fill remaining space */
+  flex: 1;                /* take remaining space */
 }
+
