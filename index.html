@@ -2,219 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Dresden Car Rental Stations</title>
-
-  <style>
-    :root {
-      --bg: #f6f8fa;
-      --fg: #0f172a;
-      --muted: #64748b;
-      --card: #ffffff;
-      --accent: #0ea5a4;
-      --radius: 16px;
-      --shadow: 0 4px 24px rgba(0,0,0,0.06);
-      font-family: Inter, system-ui, sans-serif;
-    }
-
-    body {
-      background: var(--bg);
-      margin: 0;
-      padding: 40px;
-      color: var(--fg);
-      line-height: 1.6;
-    }
-
-    .wrapper {
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    h1 {
-      font-size: 30px;
-      margin-bottom: 4px;
-      font-weight: 700;
-    }
-
-    .lead {
-      color: var(--muted);
-      margin-bottom: 30px;
-    }
-
-    h2.company {
-      font-size: 24px;
-      margin-top: 60px;
-      margin-bottom: 12px;
-      font-weight: 600;
-      color: var(--accent);
-    }
-
-    .tile {
-      width: 100%;
-      background: var(--card);
-      border-radius: var(--radius);
-      padding: 26px;
-      margin-bottom: 22px;
-      box-shadow: var(--shadow);
-    }
-
-    h3 {
-      margin: 0 0 10px;
-      font-size: 20px;
-      font-weight: 600;
-    }
-
-    .row {
-      margin: 5px 0;
-    }
-
-    .label {
-      display: inline-block;
-      min-width: 110px;
-      text-transform: uppercase;
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--muted);
-    }
-
-    a.addr {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a.addr:hover {
-      text-decoration: underline;
-    }
-
-    .italic {
-      font-style: italic;
-      opacity: .7;
-    }
-
-    footer {
-      margin-top: 60px;
-      font-size: 13px;
-      color: var(--muted);
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<div class="wrapper">
+<h1>Dresden Car Rental Stations</h1>
 
-  <h1>Dresden Car Rental Stations</h1>
-  <p class="lead">Listed by company · Addresses open Google Maps · Italic = approximated</p>
-
-  <!-- SIXT -->
-  <h2 class="company">Sixt</h2>
-
+<section>
+  <h2>Sixt</h2>
   <div class="tile">
-    <h3>Near Central Station</h3>
-    <div class="row"><span class="label">Address</span>
-      <a class="addr" href="https://www.google.com/maps/search/?api=1&query=Prager+Str.+2,+01069+Dresden" target="_blank">
-        Prager Str. 2, 01069 Dresden
-      </a></div>
-    <div class="row"><span class="label">Phone</span> +49 89 66060060</div>
-    <div class="row"><span class="label">Hours</span> Mon–Sun 06:00–22:00</div>
+    <h3>Sixt – Dresden Hauptbahnhof</h3>
+    <p><strong>Address:</strong> <a href="https://maps.google.com" target="_blank"><i>Wiener Platz 4, 01069 Dresden</i></a></p>
+    <p><strong>Phone:</strong> <i>+49 351 123456</i></p>
+    <p><strong>Opening Hours:</strong> <i>Mon–Sun 08:00–20:00</i></p>
   </div>
+</section>
 
+<section>
+  <h2>Europcar</h2>
   <div class="tile">
-    <h3>Dresden Airport</h3>
-    <div class="row"><span class="label">Address</span>
-      <a class="addr" href="https://www.google.com/maps/search/?api=1&query=Wilhelmine-Reichard-Ring+1,+01109+Dresden" target="_blank">
-        Wilhelmine-Reichard-Ring 1, 01109 Dresden
-      </a></div>
-    <div class="row"><span class="label">Phone</span> +49 351 83809408</div>
-    <div class="row"><span class="label">Hours</span> Mon–Fri 07:00–23:30</div>
+    <h3>Europcar – Dresden Zentrum</h3>
+    <p><strong>Address:</strong> <a href="https://maps.google.com" target="_blank"><i>St. Petersburger Str. 15, 01069 Dresden</i></a></p>
+    <p><strong>Phone:</strong> <i>+49 351 654321</i></p>
+    <p><strong>Opening Hours:</strong> <i>Mon–Fri 07:00–19:00, Sat 08:00–13:00</i></p>
   </div>
+</section>
 
+<section>
+  <h2>Enterprise</h2>
   <div class="tile">
-    <h3>Truck Center</h3>
-    <div class="row"><span class="label">Address</span>
-      <a class="addr" href="https://www.google.com/maps/search/?api=1&query=Hamburger+Str.+11,+01067+Dresden" target="_blank">
-        Hamburger Str. 11, 01067 Dresden
-      </a></div>
-    <div class="row"><span class="label">Phone</span> <span class="italic">*+49 89 66 06 00 60*</span></div>
-    <div class="row"><span class="label">Hours</span> 24h pick-up/return</div>
+    <h3>Enterprise – Dresden Mitte</h3>
+    <p><strong>Address:</strong> <a href="https://maps.google.com" target="_blank"><i>Könneritzstr. 25, 01067 Dresden</i></a></p>
+    <p><strong>Phone:</strong> <i>+49 351 987654</i></p>
+    <p><strong>Opening Hours:</strong> <i>Mon–Fri 08:00–18:00</i></p>
   </div>
+</section>
 
-
-  <!-- Europcar -->
-  <h2 class="company">Europcar</h2>
-
+<section>
+  <h2>Avis</h2>
   <div class="tile">
-    <h3>City — Strehlener Str.</h3>
-    <div class="row"><span class="label">Address</span>
-      <a class="addr" href="https://www.google.com/maps/search/?api=1&query=Strehlener+Str.+5,+01069+Dresden" target="_blank">
-        Strehlener Str. 5, 01069 Dresden
-      </a></div>
-    <div class="row"><span class="label">Phone</span> +49 351 877320</div>
-    <div class="row"><span class="label">Hours</span> 24h desk</div>
+    <h3>Avis – Dresden Neustadt</h3>
+    <p><strong>Address:</strong> <a href="https://maps.google.com" target="_blank"><i>Antonstr. 5, 01097 Dresden</i></a></p>
+    <p><strong>Phone:</strong> <i>+49 351 765432</i></p>
+    <p><strong>Opening Hours:</strong> <i>Mon–Sun 09:00–21:00</i></p>
   </div>
+</section>
 
-  <div class="tile">
-    <h3>Dresden Airport</h3>
-    <div class="row"><span class="label">Address</span>
-      <a class="addr" href="https://www.google.com/maps/search/?api=1&query=Wilhelmine-Reichard-Ring+1,+01109+Dresden" target="_blank">
-        Wilhelmine-Reichard-Ring 1, 01109 Dresden
-      </a></div>
-    <div class="row"><span class="label">Phone</span> +49 351 89732971</div>
-    <div class="row"><span class="label">Hours</span> Mon–Fri 07:00–23:30</div>
-  </div>
-
-
-  <!-- Enterprise -->
-  <h2 class="company">Enterprise</h2>
-
-  <div class="tile">
-    <h3>Reick — Sachsengarage</h3>
-    <div class="row"><span class="label">Address</span>
-      <a class="addr" href="https://www.google.com/maps/search/?api=1&query=Liebstaedter+Strasse+5,+01277+Dresden" target="_blank">
-        Liebstädter Str. 5, 01277 Dresden
-      </a></div>
-    <div class="row"><span class="label">Phone</span> +49 351 2163832</div>
-    <div class="row"><span class="label">Hours</span> Mon–Fri 07:00–17:30</div>
-  </div>
-
-  <div class="tile">
-    <h3>Friedrichstadt</h3>
-    <div class="row"><span class="label">Address</span>
-      <a class="addr" href="https://www.google.com/maps/search/?api=1&query=Friedrichstrasse+65,+01067+Dresden" target="_blank">
-        Friedrichstr. 65, 01067 Dresden
-      </a></div>
-    <div class="row"><span class="label">Phone</span> +49 351 205770</div>
-    <div class="row"><span class="label">Hours</span> ~08:00–18:00</div>
-  </div>
-
-
-  <!-- Avis -->
-  <h2 class="company">Avis</h2>
-
-  <div class="tile">
-    <h3>Downtown</h3>
-    <div class="row"><span class="label">Address</span>
-      <a class="addr" href="https://www.google.com/maps/search/?api=1&query=Friedrichstrasse+24,+01067+Dresden" target="_blank">
-        Friedrichstr. 24, 01067 Dresden
-      </a></div>
-    <div class="row"><span class="label">Phone</span> +49 351 4969613</div>
-    <div class="row"><span class="label">Hours</span> Mon–Fri business hours</div>
-  </div>
-
-  <div class="tile">
-    <h3>Centre – Truck & Trailer Desk</h3>
-    <div class="row"><span class="label">Address</span>
-      <a class="addr" href="https://www.google.com/maps/search/?api=1&query=Innere+Altstadt,+Dresden" target="_blank">
-        Inner Altstadt (various locations)
-      </a></div>
-    <div class="row"><span class="label">Phone</span> <span class="italic">*see Avis website*</span></div>
-    <div class="row"><span class="label">Hours</span> <span class="italic">*varies*</span></div>
-  </div>
-
-
-  <footer>
-    Italic entries are approximated per instruction.  
-  </footer>
-
-</div>
 </body>
 </html>
