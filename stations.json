@@ -1,0 +1,34 @@
+[
+  {
+    "company": "Sixt",
+    "name": "Near Central Station",
+    "address": "Prager Str. 2, 01069 Dresden",
+    "maps_link": "https://www.google.com/maps/search/?api=1&query=Prager+Str.+2,+01069+Dresden",
+    "phone": "+49 89 66060060",
+    "hours": "Mon–Sun 06:00–22:00"
+  },
+  {
+    "company": "Europcar",
+    "name": "City (Strehlener Str.)",
+    "address": "Strehlener Str. 5, 01069 Dresden",
+    "maps_link": "https://www.google.com/maps/search/?api=1&query=Strehlener+Str.+5,+01069+Dresden",
+    "phone": "+49 351 877320",
+    "hours": "24 hours desk"
+  },
+  {
+    "company": "Enterprise",
+    "name": "Friedrichstadt Branch",
+    "address": "Friedrichstr. 65, 01067 Dresden",
+    "maps_link": "https://www.google.com/maps/search/?api=1&query=Friedrichstrasse+65,+01067+Dresden",
+    "phone": "+49 351 205770",
+    "hours": "~08:00–18:00"
+  },
+  {
+    "company": "Avis",
+    "name": "Downtown",
+    "address": "Friedrichstr. 24, 01067 Dresden",
+    "maps_link": "https://www.google.com/maps/search/?api=1&query=Friedrichstrasse+24,+01067+Dresden",
+    "phone": "+49 351 4969613",
+    "hours": "Mon–Fri business hours"
+  }
+]
