@@ -43,7 +43,12 @@
               <h3>${station.name}</h3>
               <div class="row"><span class="label">Address:</span> <a href="${station.maps_link}" target="_blank">${station.address}</a></div>
               <div class="row"><span class="label">Phone:</span> ${station.phone}</div>
-              <div class="row"><span class="label">Hours:</span> ${station.hours.split(';').map(h => `<div>${h.trim()}</div>`).join('')}</div>
+              <div class="row">
+                <span class="label">Hours:</span>
+                <div style="display:inline-block">
+                  ${station.hours.split(';').map(h => `<div>${h.trim()}</div>`).join('')}
+                </div>
+              </div>
             `;
             container.appendChild(div);
           });
