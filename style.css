@@ -1,37 +1,87 @@
+:root {
+  --bg: #f6f8fa;
+  --fg: #0f172a;
+  --muted: #64748b;
+  --card: #ffffff;
+  --accent: #0ea5a4;
+  --radius: 16px;
+  --shadow: 0 4px 24px rgba(0,0,0,0.06);
+  font-family: Inter, system-ui, sans-serif;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
   margin: 0;
-  background: #fafafa;
-  padding: 20px;
+  padding: 40px;
+  line-height: 1.6;
 }
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 h1 {
+  font-size: 30px;
+  margin-bottom: 8px;
+  font-weight: 700;
   text-align: center;
-  margin-bottom: 40px;
 }
-section {
-  margin-bottom: 40px;
+
+.lead {
+  color: var(--muted);
+  margin-bottom: 30px;
+  text-align: center;
 }
-h2 {
-  font-size: 1.6rem;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 5px;
+
+h2.company-title {
+  font-size: 24px;
+  margin-top: 50px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: var(--accent);
 }
+
 .tile {
   width: 100%;
-  background: white;
-  padding: 20px;
+  background: var(--card);
+  padding: 26px;
   margin: 15px 0;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
+
 .tile h3 {
   margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
 }
-.tile a {
-  color: #0066cc;
+
+.row {
+  margin: 5px 0;
+}
+
+.label {
+  display: inline-block;
+  min-width: 110px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
   text-decoration: none;
 }
-.tile a:hover {
+
+a:hover {
   text-decoration: underline;
+}
+
+.italic {
+  font-style: italic;
+  opacity: 0.7;
 }
