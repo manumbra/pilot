@@ -1,52 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dresden Car Rental Stations</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Dresden Car Rental Stations</h1>
+  <div class="wrapper">
+    <h1>Dresden Car Rental Stations</h1>
+    <p class="lead">Grouped by company. Addresses link to Google Maps. Italic entries are approximated.</p>
 
-<section>
-  <h2>Sixt</h2>
-  <div class="tile">
-    <h3>Sixt – Dresden Hauptbahnhof</h3>
-    <p><strong>Address:</strong> <a href="https://maps.google.com" target="_blank"><i>Wiener Platz 4, 01069 Dresden</i></a></p>
-    <p><strong>Phone:</strong> <i>+49 351 123456</i></p>
-    <p><strong>Opening Hours:</strong> <i>Mon–Sun 08:00–20:00</i></p>
+    <!-- Container where JS will inject the tiles -->
+    <div id="stations"></div>
   </div>
-</section>
 
-<section>
-  <h2>Europcar</h2>
-  <div class="tile">
-    <h3>Europcar – Dresden Zentrum</h3>
-    <p><strong>Address:</strong> <a href="https://maps.google.com" target="_blank"><i>St. Petersburger Str. 15, 01069 Dresden</i></a></p>
-    <p><strong>Phone:</strong> <i>+49 351 654321</i></p>
-    <p><strong>Opening Hours:</strong> <i>Mon–Fri 07:00–19:00, Sat 08:00–13:00</i></p>
-  </div>
-</section>
+  <script>
+    // Fetch stations.json and build tiles dynamically
+    fetch('stations.json')
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('stations');
 
-<section>
-  <h2>Enterprise</h2>
-  <div class="tile">
-    <h3>Enterprise – Dresden Mitte</h3>
-    <p><strong>Address:</strong> <a href="https://maps.google.com" target="_blank"><i>Könneritzstr. 25, 01067 Dresden</i></a></p>
-    <p><strong>Phone:</strong> <i>+49 351 987654</i></p>
-    <p><strong>Opening Hours:</strong> <i>Mon–Fri 08:00–18:00</i></p>
-  </div>
-</section>
+        // Group stations by company
+        const grouped = {};
+        data.forEach(station => {
+          if (!grouped[station.company]) grouped[station.company] = [];
+          grouped[station.company].push(station);
+        });
 
-<section>
-  <h2>Avis</h2>
-  <div class="tile">
-    <h3>Avis – Dresden Neustadt</h3>
-    <p><strong>Address:</strong> <a href="https://maps.google.com" target="_blank"><i>Antonstr. 5, 01097 Dresden</i></a></p>
-    <p><strong>Phone:</strong> <i>+49 351 765432</i></p>
-    <p><strong>Opening Hours:</strong> <i>Mon–Sun 09:00–21:00</i></p>
-  </div>
-</section>
+        // Build HTML tiles
+        for (const company in grouped) {
+          const h2 = document.createElement('h2');
+          h2.textContent = company;
+          h2.className = 'company-title';
+          container.appendChild(h2);
 
+          grouped[company].forEach(station => {
+            const div = document.createElement('div');
+            div.className = 'tile';
+            div.innerHTML = `
+              <h3>${station.name}</h3>
+              <div class="row"><span class="label">Address:</span> <a href="${station.maps_link}" target="_blank">${station.address}</a></div>
+              <div class="row"><span class="label">Phone:</span> ${station.phone}</div>
+              <div class="row"><span class="label">Hours:</span> ${station.hours}</div>
+            `;
+            container.appendChild(div);
+          });
+        }
+      });
+  </script>
 </body>
 </html>
