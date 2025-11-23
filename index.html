@@ -11,7 +11,6 @@
     <h1>Dresden Car Rental Stations</h1>
     <p class="lead">Grouped by company. Addresses link to Google Maps. Italic entries are approximated.</p>
 
-    <!-- Container for tiles -->
     <div id="stations"></div>
   </div>
 
@@ -51,7 +50,7 @@
                 <span class="label">Phone:</span> ${station.phone}
               </div>
 
-              <div class="row">
+              <div class="row hours">
                 <span class="label">Hours:</span>
                 <ul class="hours-list">
                   ${station.hours.split(';').map(h => {
@@ -62,7 +61,6 @@
                   }).join('')}
                 </ul>
               </div>
-
             `;
 
             container.appendChild(div);
