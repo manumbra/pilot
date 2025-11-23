@@ -1,234 +1,251 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Car Rental Stations — Dresden (demo)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dresden Car Rental Stations – Demo</title>
+
   <style>
-    :root{
-      --bg:#f8fafc; --card:#ffffff; --muted:#6b7280; --accent:#0ea5a4;
-      --radius:12px; --shadow: 0 6px 18px rgba(15,23,42,0.08);
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --muted: #64748b;
+      --accent: #0ea5a4;
+      --title: #0f172a;
+      --radius: 16px;
+      --shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
       font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
-    body{background:linear-gradient(180deg,#f2f7f8,var(--bg)); margin:0;padding:40px;color:#0f172a}
-    .wrap{max-width:980px;margin:0 auto}
-    header{display:flex;gap:16px;align-items:center;margin-bottom:20px}
-    header h1{margin:0;font-weight:600;font-size:20px}
-    p.lead{margin:4px 0 0;color:var(--muted);font-size:14px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:18px}
-    .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px}
-    .company{display:flex;align-items:center;gap:12px;margin-bottom:8px}
-    .badge{width:44px;height:44px;border-radius:10px;background:#eefafa;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent)}
-    h2.company-name{font-size:16px;margin:0}
-    table{width:100%;border-collapse:collapse}
-    th,td{padding:8px 6px;text-align:left;border-bottom:1px dashed #eef2f7;font-size:14px}
-    th{color:var(--muted);font-weight:600;text-transform:uppercase;font-size:11px}
-    a.addr{color:#0b5d5a;text-decoration:none}
-    a.addr:hover{text-decoration:underline}
-    small.muted{display:block;color:var(--muted);margin-top:8px;font-size:12px}
-    footer{margin-top:18px;color:var(--muted);font-size:13px}
-    .italic{font-style:italic;color:#6b728080}
-    @media (max-width:520px){body{padding:18px}}
+
+    body {
+      background: var(--bg);
+      margin: 0;
+      padding: 40px;
+      color: var(--title);
+    }
+
+    .wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin-bottom: 6px;
+      font-size: 26px;
+      font-weight: 600;
+    }
+
+    .lead {
+      margin-top: 0;
+      margin-bottom: 30px;
+      color: var(--muted);
+    }
+
+    h2.company-title {
+      margin-top: 60px;
+      margin-bottom: 12px;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .company-section {
+      margin-bottom: 20px;
+      padding: 10px 0;
+    }
+
+    /* TILE STYLE */
+    .tile {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 22px;
+      margin-bottom: 18px;
+      box-shadow: var(--shadow);
+      width: 100%;
+    }
+
+    .tile h3 {
+      margin: 0 0 12px;
+      font-size: 18px;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .row {
+      margin: 6px 0;
+      font-size: 15px;
+    }
+
+    .row span {
+      display: inline-block;
+      min-width: 110px;
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    a.addr {
+      color: #0b5d5a;
+      text-decoration: none;
+    }
+
+    a.addr:hover {
+      text-decoration: underline;
+    }
+
+    .italic {
+      font-style: italic;
+      opacity: 0.7;
+    }
+
+    footer {
+      margin-top: 50px;
+      color: var(--muted);
+      font-size: 13px;
+    }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div>
-        <h1>Car rental stations in Dresden — demo</h1>
-        <p class="lead">Sixt · Europcar · Enterprise · Avis — basic contact details & links to Google Maps</p>
+
+<div class="wrapper">
+
+  <h1>Car Rental Stations in Dresden — Demo</h1>
+  <p class="lead">Grouped by company. Addresses link to Google Maps. Italic entries are approximated.</p>
+
+  <!-- ===================== -->
+  <!-- SIXT -->
+  <!-- ===================== -->
+  <div class="company-section" id="sixt">
+    <h2 class="company-title">SIXT</h2>
+
+    <div class="tile">
+      <h3>Near Central Station</h3>
+      <div class="row"><span>Address:</span>
+        <a class="addr" href="https://www.google.com/maps/search/?api=1&query=Prager+Str.+2,+01069+Dresden" target="_blank">
+          Prager Str. 2, 01069 Dresden
+        </a>
       </div>
-    </header>
-
-    <div class="grid">
-
-      <!-- SIXT -->
-      <div class="card" id="sixt">
-        <div class="company">
-          <div class="badge">SX</div>
-          <div>
-            <h2 class="company-name">SIXT — Dresden (selected stations)</h2>
-            <small class="muted">official SIXT local pages & directories</small>
-          </div>
-        </div>
-
-        <table>
-          <thead><tr><th>Location</th><th>Address</th><th>Phone</th><th>Hours</th></tr></thead>
-          <tbody>
-            <tr>
-              <td>Near Central Station</td>
-              <td>
-                <a class="addr" target="_blank" rel="noopener noreferrer"
-                   href="https://www.google.com/maps/search/?api=1&query=Prager+Str.+2,+01069+Dresden">
-                  Prager Str. 2, 01069 Dresden
-                </a>
-              </td>
-              <td>+49 89 66 06 00 60</td>
-              <td>Mon–Sun 06:00–22:00</td>
-            </tr>
-
-            <tr>
-              <td>Dresden Airport</td>
-              <td>
-                <a class="addr" target="_blank" rel="noopener noreferrer"
-                   href="https://www.google.com/maps/search/?api=1&query=Wilhelmine-Reichard-Ring+1,+01109+Dresden">
-                  Wilhelmine-Reichard-Ring 1, 01109 Dresden
-                </a>
-              </td>
-              <td>+49 351 83 80 94 08</td>
-              <td>Mon–Fri 07:00–23:30 (varies)</td>
-            </tr>
-
-            <tr>
-              <td>Truck Center</td>
-              <td>
-                <a class="addr" target="_blank" rel="noopener noreferrer"
-                   href="https://www.google.com/maps/search/?api=1&query=Hamburger+Str.+11,+01067+Dresden">
-                  Hamburger Str. 11, 01067 Dresden
-                </a>
-              </td>
-              <td class="italic">*+49 89 66 06 00 60*</td>
-              <td>24h pick-up / 24h return</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- EUROPCAR -->
-      <div class="card" id="europcar">
-        <div class="company">
-          <div class="badge">EC</div>
-          <div>
-            <h2 class="company-name">Europcar — Dresden</h2>
-            <small class="muted">official Europcar location pages & local directories</small>
-          </div>
-        </div>
-
-        <table>
-          <thead><tr><th>Location</th><th>Address</th><th>Phone</th><th>Hours</th></tr></thead>
-          <tbody>
-            <tr>
-              <td>City (Strehlener Str.)</td>
-              <td>
-                <a class="addr" target="_blank" rel="noopener noreferrer"
-                   href="https://www.google.com/maps/search/?api=1&query=Strehlener+Str.+5,+01069+Dresden">
-                  Strehlener Str. 5, 01069 Dresden
-                </a>
-              </td>
-              <td>+49 351 877320</td>
-              <td>24 hours / city desk (may include extended hours)</td>
-            </tr>
-
-            <tr>
-              <td>Dresden Airport</td>
-              <td>
-                <a class="addr" target="_blank" rel="noopener noreferrer"
-                   href="https://www.google.com/maps/search/?api=1&query=Wilhelmine-Reichard-Ring+1,+01109+Dresden">
-                  Wilhelmine-Reichard-Ring 1, 01109 Dresden
-                </a>
-              </td>
-              <td>+49 351 89732971</td>
-              <td>Mon–Fri 07:00–23:30; Sat/Sun vary</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- ENTERPRISE -->
-      <div class="card" id="enterprise">
-        <div class="company">
-          <div class="badge">EN</div>
-          <div>
-            <h2 class="company-name">Enterprise Rent-A-Car — Dresden</h2>
-            <small class="muted">official Enterprise pages & listings</small>
-          </div>
-        </div>
-
-        <table>
-          <thead><tr><th>Location</th><th>Address</th><th>Phone</th><th>Hours</th></tr></thead>
-          <tbody>
-            <tr>
-              <td>Dresden / Reick (Sachsengarage)</td>
-              <td>
-                <a class="addr" target="_blank" rel="noopener noreferrer"
-                   href="https://www.google.com/maps/search/?api=1&query=Liebstaedter+Strasse+5,+01277+Dresden">
-                  Liebstäedter Str. 5, 01277 Dresden
-                </a>
-              </td>
-              <td>+49 351 2163832</td>
-              <td>Mon–Fri 07:00–17:30 (check local page)</td>
-            </tr>
-
-            <tr>
-              <td>Friedrichstadt (city branch)</td>
-              <td>
-                <a class="addr" target="_blank" rel="noopener noreferrer"
-                   href="https://www.google.com/maps/search/?api=1&query=Friedrichstrasse+65,+01067+Dresden">
-                  Friedrichstr. 65, 01067 Dresden
-                </a>
-              </td>
-              <td>+49 351 205770</td>
-              <td>Mon–Fri ~08:00–18:00 (varies by branch)</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- AVIS -->
-      <div class="card" id="avis">
-        <div class="company">
-          <div class="badge">AV</div>
-          <div>
-            <h2 class="company-name">Avis — Dresden</h2>
-            <small class="muted">official Avis listing & local directory</small>
-          </div>
-        </div>
-
-        <table>
-          <thead><tr><th>Location</th><th>Address</th><th>Phone</th><th>Hours</th></tr></thead>
-          <tbody>
-            <tr>
-              <td>Dresden Downtown</td>
-              <td>
-                <a class="addr" target="_blank" rel="noopener noreferrer"
-                   href="https://www.google.com/maps/search/?api=1&query=Friedrichstrasse+24,+01067+Dresden">
-                  Friedrichstr. 24, 01067 Dresden
-                </a>
-              </td>
-              <td>+49 351 4969613</td>
-              <td>Mon–Fri: typical business hours (check local listing)</td>
-            </tr>
-
-            <tr>
-              <td>Center / Trailer & Truck desk</td>
-              <td>
-                <a class="addr" target="_blank" rel="noopener noreferrer"
-                   href="https://www.google.com/maps/search/?api=1&query=Innere+Altstadt,+Dresden">
-                  (City centre locations — check Avis website)
-                </a>
-              </td>
-              <td class="italic">*see official Avis listing*</td>
-              <td class="italic">*hours vary by desk*</td>
-            </tr>
-          </tbody>
-        </table>
-
-      </div>
-
+      <div class="row"><span>Phone:</span> +49 89 66 06 00 60</div>
+      <div class="row"><span>Hours:</span> Mon–Sun 06:00–22:00</div>
     </div>
 
-    <footer>
-      <p><strong>Notes:</strong></p>
-      <ul>
-        <li>Where I found authoritative local pages (company pages / local directories) I used those live sources — citations are below so you can verify. </li>
-        <li>Any entry shown in <span class="italic">italics</span> was inferred / not clearly published on the official page and is therefore shown as *approximate* (per your instruction).</li>
-        <li>If you want, I can turn this file into a ready-to-publish GitHub Pages repo structure and give you the exact `git` commands to push it. </li>
-      </ul>
+    <div class="tile">
+      <h3>Dresden Airport</h3>
+      <div class="row"><span>Address:</span>
+        <a class="addr" href="https://www.google.com/maps/search/?api=1&query=Wilhelmine-Reichard-Ring+1,+01109+Dresden" target="_blank">
+          Wilhelmine-Reichard-Ring 1, 01109 Dresden
+        </a>
+      </div>
+      <div class="row"><span>Phone:</span> +49 351 83809408</div>
+      <div class="row"><span>Hours:</span> Mon–Fri 07:00–23:30</div>
+    </div>
 
-      <p style="margin-top:8px;color:var(--muted);font-size:13px">
-        Data sources (sample): official company pages and local directories.
-      </p>
-    </footer>
+    <div class="tile">
+      <h3>Truck Center</h3>
+      <div class="row"><span>Address:</span>
+        <a class="addr" href="https://www.google.com/maps/search/?api=1&query=Hamburger+Str.+11,+01067+Dresden" target="_blank">
+          Hamburger Str. 11, 01067 Dresden
+        </a>
+      </div>
+      <div class="row"><span>Phone:</span> <span class="italic">*+49 89 66 06 00 60*</span></div>
+      <div class="row"><span>Hours:</span> 24h pick-up/return</div>
+    </div>
   </div>
+
+  <!-- ===================== -->
+  <!-- EUROPCAR -->
+  <!-- ===================== -->
+  <div class="company-section" id="europcar">
+    <h2 class="company-title">Europcar</h2>
+
+    <div class="tile">
+      <h3>City (Strehlener Str.)</h3>
+      <div class="row"><span>Address:</span>
+        <a class="addr" href="https://www.google.com/maps/search/?api=1&query=Strehlener+Str.+5,+01069+Dresden" target="_blank">
+          Strehlener Str. 5, 01069 Dresden
+        </a>
+      </div>
+      <div class="row"><span>Phone:</span> +49 351 877320</div>
+      <div class="row"><span>Hours:</span> 24 hours desk</div>
+    </div>
+
+    <div class="tile">
+      <h3>Dresden Airport</h3>
+      <div class="row"><span>Address:</span>
+        <a class="addr" href="https://www.google.com/maps/search/?api=1&query=Wilhelmine-Reichard-Ring+1,+01109+Dresden" target="_blank">
+          Wilhelmine-Reichard-Ring 1, 01109 Dresden
+        </a>
+      </div>
+      <div class="row"><span>Phone:</span> +49 351 89732971</div>
+      <div class="row"><span>Hours:</span> Mon–Fri 07:00–23:30; weekend varies</div>
+    </div>
+  </div>
+
+  <!-- ===================== -->
+  <!-- ENTERPRISE -->
+  <!-- ===================== -->
+  <div class="company-section" id="enterprise">
+    <h2 class="company-title">Enterprise</h2>
+
+    <div class="tile">
+      <h3>Reick (Sachsengarage)</h3>
+      <div class="row"><span>Address:</span>
+        <a class="addr" href="https://www.google.com/maps/search/?api=1&query=Liebstaedter+Strasse+5,+01277+Dresden" target="_blank">
+          Liebstädter Str. 5, 01277 Dresden
+        </a>
+      </div>
+      <div class="row"><span>Phone:</span> +49 351 2163832</div>
+      <div class="row"><span>Hours:</span> Mon–Fri 07:00–17:30</div>
+    </div>
+
+    <div class="tile">
+      <h3>Friedrichstadt</h3>
+      <div class="row"><span>Address:</span>
+        <a class="addr" href="https://www.google.com/maps/search/?api=1&query=Friedrichstrasse+65,+01067+Dresden" target="_blank">
+          Friedrichstr. 65, 01067 Dresden
+        </a>
+      </div>
+      <div class="row"><span>Phone:</span> +49 351 205770</div>
+      <div class="row"><span>Hours:</span> ~08:00–18:00</div>
+    </div>
+  </div>
+
+  <!-- ===================== -->
+  <!-- AVIS -->
+  <!-- ===================== -->
+  <div class="company-section" id="avis">
+    <h2 class="company-title">Avis</h2>
+
+    <div class="tile">
+      <h3>Downtown</h3>
+      <div class="row"><span>Address:</span>
+        <a class="addr" href="https://www.google.com/maps/search/?api=1&query=Friedrichstrasse+24,+01067+Dresden" target="_blank">
+          Friedrichstr. 24, 01067 Dresden
+        </a>
+      </div>
+      <div class="row"><span>Phone:</span> +49 351 4969613</div>
+      <div class="row"><span>Hours:</span> Mon–Fri business hours</div>
+    </div>
+
+    <div class="tile">
+      <h3>Center – Truck/Trailer Desk</h3>
+      <div class="row"><span>Address:</span>
+        <a class="addr" href="https://www.google.com/maps/search/?api=1&query=Innere+Altstadt,+Dresden" target="_blank">
+          (Various centre locations)
+        </a>
+      </div>
+      <div class="row"><span>Phone:</span> <span class="italic">*see Avis site*</span></div>
+      <div class="row"><span>Hours:</span> <span class="italic">*varies by desk*</span></div>
+    </div>
+
+  </div>
+
+  <footer>
+    Italic entries are approximate (as instructed).  
+    Want me to package this as a GitHub Pages–ready repository?
+  </footer>
+
+</div>
+
 </body>
 </html>
