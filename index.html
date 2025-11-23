@@ -44,7 +44,7 @@
               </div>
 
               <div class="row phone">
-                ${station.phone}
+                <a href="tel:${station.phone.replace(/\s+/g, '')}">${station.phone}</a>
               </div>
 
               <ul class="hours-list">
