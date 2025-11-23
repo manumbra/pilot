@@ -54,4 +54,20 @@
               <div class="row">
                 <span class="label">Hours:</span>
                 <ul class="hours-list">
-                  ${station.hours.split(';').map(h =>
+                  ${station.hours.split(';').map(h => {
+                    const parts = h.trim().split(' ');
+                    const day = parts.shift();
+                    const time = parts.join(' ');
+                    return `<li><span class="hour-day">${day}</span><span class="hour-time">${time}</span></li>`;
+                  }).join('')}
+                </ul>
+              </div>
+            `;
+
+            container.appendChild(div);
+          });
+        }
+      });
+  </script>
+</body>
+</html>
