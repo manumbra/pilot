@@ -49,12 +49,21 @@
 
               <ul class="hours-list">
                 ${station.hours.split(';').map(h => {
-                  const parts = h.trim().split(' ');
-                  const day = parts.shift();
-                  const time = parts.join(' ');
+                  const trimmed = h.trim();
+                  if (!trimmed) return ''; // skip empty entries
+                  const firstSpace = trimmed.indexOf(' ');
+                  let day, time;
+                  if (firstSpace === -1) {
+                    day = trimmed;
+                    time = '';
+                  } else {
+                    day = trimmed.slice(0, firstSpace);
+                    time = trimmed.slice(firstSpace + 1);
+                  }
                   return `<li><span class="hour-day">${day}</span><span class="hour-time">${time}</span></li>`;
                 }).join('')}
               </ul>
+
             `;
 
             container.appendChild(div);
