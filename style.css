@@ -54,6 +54,12 @@ h2.company-title {
   margin: 15px 0;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tile:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 30px rgba(0,0,0,0.08);
 }
 
 .tile h3 {
@@ -74,32 +80,71 @@ h2.company-title {
 
 .row a:hover {
   text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
-/* Hours list alignment */
-.hours-list {
-  list-style: none;
-  padding: 0;
-  margin: 8px 0 0 0;
+/* Hours list alignment - two columns */
+.hours-row {
   display: flex;
-  flex-direction: column;
+  flex-wrap: nowrap; /* allows wrapping on small screens */
+  margin-bottom: 2px;
+}
+.hours-row .weekday {
+  flex: 0 0 100px; /* or 120px if needed */
+  font-weight: bold;
 }
 
-.hours-list li {
-  display: flex;
-  gap: 10px;
-}
-
-.hour-day {
-  min-width: 60px;
-  font-weight: 600;
-}
-
-.hour-time {
-  flex: 1;
+.hours-row .hour-time {
+  flex: 1; /* remaining space for hours */
+  margin-left: 10px;
+  word-break: break-word; /* wrap long text if needed */
 }
 
 /* Responsive adjustments */
 @media (max-width: 480px) {
   body {
-    pad
+    padding: 10px;
+  }
+
+  .hours-row {
+    flex-direction: column; /* stack weekday and hour vertically */
+    margin-bottom: 4px;
+  }
+
+  .hours-row .weekday {
+    flex: none;
+    width: auto;
+    margin-bottom: 2px;
+  }
+
+  .hours-row .hour-time {
+    margin-left: 0;
+  }
+
+  .tile {
+    padding: 15px;
+  }
+
+  h2.company-title {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .tile h3 {
+    font-size: 18px;
+  }
+}
+
+/* Additional styling for clarity */
+.row.address a {
+  word-break: break-word; /* prevent long addresses from overflowing */
+}
+
+.row.phone a {
+  word-break: break-word;
+}

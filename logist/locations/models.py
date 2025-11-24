@@ -232,7 +232,11 @@ class Site(models.Model):
                 )
             else:
                 hours_list.append((wd, "Unknown"))
-
+        
+        # 2b) If all hours are Unknown, return empty string
+        if all(hour == "Unknown" for _, hour in hours_list):
+            return ""
+        
         # 3) Group consecutive days with same hours
         result = []
         for key, group in groupby(enumerate(hours_list), key=lambda x: x[1][1]):

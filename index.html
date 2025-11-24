@@ -12,64 +12,85 @@
     <div id="stations"></div>
   </div>
 
-  <script>
-    fetch('stations.json')
-      .then(res => res.json())
-      .then(data => {
-        const container = document.getElementById('stations');
+<script>
+fetch('stations.json')
+  .then(res => res.json())
+  .then(data => {
+    const container = document.getElementById('stations');
 
-        // Group stations by company
-        const grouped = {};
-        data.forEach(station => {
-          if (!grouped[station.company]) grouped[station.company] = [];
-          grouped[station.company].push(station);
+    // Group stations by company
+    const grouped = {};
+    data.forEach(station => {
+      if (!grouped[station.company]) grouped[station.company] = [];
+      grouped[station.company].push(station);
+    });
+
+    // Build tiles for each company
+    Object.keys(grouped)
+      .sort()
+      .forEach(company => {
+        const h2 = document.createElement('h2');
+        h2.textContent = company;
+        h2.className = 'company-title';
+        container.appendChild(h2);
+
+        grouped[company].forEach(station => {
+          const div = document.createElement('div');
+          div.className = 'tile';
+
+          // Phone HTML (safe)
+          const phoneHTML = station.phone
+            ? `<div class="row phone">
+                 <a href="tel:${station.phone.replace(/\s+/g, '')}">${station.phone}</a>
+               </div>`
+            : '';
+
+          // Hours HTML
+          let hoursHTML = '';
+          if (station.hours) {
+            // known hours → build weekday/time rows
+            hoursHTML = `<div class="row hours">` +
+              station.hours
+                .split(';')
+                .map(h => h.trim())
+                .filter(h => h)
+                .map(h => {
+                  // replace Closed/Unknown
+                  const clean = h.replace('Closed', 'geschlossen').replace('Unknown', 'unbekannt');
+
+                  // split into weekday and time
+                  const firstSpace = clean.indexOf(' ');
+                  const day = firstSpace > -1 ? clean.slice(0, firstSpace) : '';
+                  const time = firstSpace > -1 ? clean.slice(firstSpace + 1) : clean;
+
+                  return `<div class="hours-row"><span class="weekday">${day}</span><span class="hour-time">${time}</span></div>`;
+                })
+                .join('') +
+              `</div>`;
+          }
+
+          div.innerHTML = `
+            <h3>${station.name || station.location || '(no name)'}</h3>
+
+            <div class="row address">
+              <a href="${station.maps_link}" target="_blank">${station.address || '(no address)'}</a>
+            </div>
+
+            ${phoneHTML}
+            ${hoursHTML}
+          `;
+
+          container.appendChild(div);
         });
-
-        // Build tiles
-        for (const company in grouped) {
-          const h2 = document.createElement('h2');
-          h2.textContent = company;
-          h2.className = 'company-title';
-          container.appendChild(h2);
-
-          grouped[company].forEach(station => {
-            const div = document.createElement('div');
-            div.className = 'tile';
-
-            div.innerHTML = `
-              <h3>${station.name}</h3>
-
-              <div class="row address">
-                <a href="${station.maps_link}" target="_blank">${station.address}</a>
-              </div>
-
-              <div class="row phone">
-                <a href="tel:${station.phone.replace(/\s+/g, '')}">${station.phone}</a>
-              </div>
-
-              <ul class="hours-list">
-                ${station.hours.split(';').map(h => {
-                  const trimmed = h.trim();
-                  if (!trimmed) return ''; // skip empty entries
-                  const firstSpace = trimmed.indexOf(' ');
-                  let day, time;
-                  if (firstSpace === -1) {
-                    day = trimmed;
-                    time = '';
-                  } else {
-                    day = trimmed.slice(0, firstSpace);
-                    time = trimmed.slice(firstSpace + 1);
-                  }
-                  return `<li><span class="hour-day">${day}</span><span class="hour-time">${time}</span></li>`;
-                }).join('')}
-              </ul>
-
-            `;
-
-            container.appendChild(div);
-          });
-        }
       });
-  </script>
+  })
+  .catch(err => console.error('Error loading stations:', err));
+</script>
+
+
+
+
+
+
 </body>
 </html>
