@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from django.core.validators import RegexValidator
+from itertools import groupby
 # from .services.opening_hours import get_site_hours
 
 # -----------------------
@@ -9,6 +10,7 @@ from django.core.validators import RegexValidator
 class Country(models.Model):
     name = models.CharField(max_length=100)
     local_name = models.CharField(max_length=100, blank=True, null=True)
+    german_name = models.CharField(max_length=100, blank=True, null=True)
     code = models.CharField(max_length=5, unique=True,blank=True, null=True)  # e.g., 'DE', 'AT'
     dialing_code = models.CharField(max_length=5, blank=True, null=True)
     # time_zones = models.CharField(max_length=100)
@@ -29,6 +31,9 @@ class Region(models.Model):
     name = models.CharField(max_length=100)
     country = models.ForeignKey(Country, on_delete=models.CASCADE, related_name='regions')
 
+    class Meta:
+        ordering = ['name']
+
     def __str__(self):
         return f"{self.name}, {self.country.code}"
 
@@ -39,22 +44,38 @@ class Location(models.Model):
     name = models.CharField(max_length=100)  # city, town, or municipality
     region = models.ForeignKey(Region, on_delete=models.CASCADE, related_name='locations')
 
+    class Meta:
+        ordering = ['name']
+        unique_together = ('name', 'region')  # only one location per region
+
     def __str__(self):
         return f"{self.name} ({self.region})"
 
+# -----------------------
+# Group
+# -----------------------
+class Group(models.Model):
+    name = models.CharField(max_length=100)  # group name
+
+    def __str__(self):
+        return self.name
 
 # -----------------------
 # Company
 # -----------------------
 class Company(models.Model):
     name = models.CharField(max_length=100)  # company name
+    group = models.ForeignKey(Group, on_delete=models.SET_NULL, related_name='companies', blank=True, null=True)
     
     class Meta:
         verbose_name_plural = "Companies"
+        ordering = ['name']  # alphabetical by name
 
     def __str__(self):
         return self.name
 
+
+WEEKDAY_NAMES = ["Mo","Tu","We","Th","Fr","Sa","Su"]
 
 # -----------------------
 # Site Level (physical branch/office)
@@ -75,6 +96,7 @@ class Site(models.Model):
     )
     google_place_id = models.CharField(max_length=200, blank=True, null=True)
     email = models.EmailField(max_length=254, blank=True, null=True)
+    phone = models.CharField(max_length=20, blank=True, null=True)
     """
     def get_opening_hours(self, check_date):
         # Same logic as before
@@ -127,6 +149,38 @@ class Site(models.Model):
         return None, None
 
     @property
+    def hours_display(self):
+        """
+        Returns a human-readable opening hours string like:
+        "Mo–Fr 08:00–17:00; Sa 08:00–11:00"
+        """
+
+        # 1️⃣ get all opening hours for this site, ordered by weekday
+        hours = self.default_hours.order_by('weekday')
+
+        # 2️⃣ convert each to (weekday_name, open-close string)
+        hours_list = [(WEEKDAY_NAMES[h.weekday], f"{h.open_time.strftime('%H:%M')}-{h.close_time.strftime('%H:%M')}") for h in hours]
+
+        # 3️⃣ group consecutive days with same hours
+        result = []
+        for k, g in groupby(enumerate(hours_list), key=lambda x: x[1][1]):
+            group = list(g)
+            # extract weekdays
+            days = [x[1][0] for x in group]
+            if len(days) == 1:
+                day_str = days[0]
+            else:
+                day_str = f"{days[0]}–{days[-1]}"
+            result.append(f"{day_str} {k}")
+
+        return "; ".join(result)
+
+    
+    class Meta:
+        ordering = ['location']
+        unique_together = ('location', 'company', 'name')  # one site per company per location, otherwise distinct names
+
+    @property
     def today_hours(self):
         from datetime import date
         return self.get_opening_hours(date.today())
@@ -149,7 +203,6 @@ WEEKDAYS = [
     (5, 'Saturday'),
     (6, 'Sunday'),
 ]
-
 
 class DefaultHours(models.Model):
     site = models.ForeignKey('Site', on_delete=models.CASCADE, related_name='default_hours')

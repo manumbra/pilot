@@ -1,12 +1,12 @@
 from django.contrib import admin
-from .models import Country, Region, Location, Company, Site, DefaultHours, SiteException, PublicHoliday
+from .models import Country, Region, Location, Group, Company, Site, DefaultHours, SiteException, PublicHoliday
 
 # -----------------------
 # Country admin
 # -----------------------
 @admin.register(Country)
 class CountryAdmin(admin.ModelAdmin):
-    list_display = ('name', 'code')
+    list_display = ('name', 'code', 'emoji_flag')
     search_fields = ('name', 'code')
 
 # -----------------------
@@ -28,10 +28,18 @@ class LocationAdmin(admin.ModelAdmin):
     search_fields = ('name',)
 
 # -----------------------
+# Group admin
+# -----------------------
+@admin.register(Group)
+class GroupAdmin(admin.ModelAdmin):
+    list_display = ('name',)
+    search_fields = ('name',)
+
+# -----------------------
 # Company admin
 # -----------------------
 @admin.register(Company)
-class RegionAdmin(admin.ModelAdmin):
+class CompanyAdmin(admin.ModelAdmin):
     list_display = ('name',)
     search_fields = ('name',)
 

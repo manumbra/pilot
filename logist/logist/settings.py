@@ -108,6 +108,8 @@ LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'Europe/Berlin'  # for Germany
 
+TIME_INPUT_FORMATS = ['%H:%M']  # no seconds
+
 USE_I18N = True
 
 USE_TZ = True
