@@ -1,0 +1,426 @@
+[
+  {
+    "company": "Vanovate GmbH",
+    "name": "Vanovate GmbH - Bad Salzungen - FleetParQ",
+    "address": "Am Hämbacher Kreuz 1, 36460 Bad Salzungen",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "Sixt",
+    "name": "Sixt - Berlin - Hauptbahnhof",
+    "address": "Europaplatz 1, 10557 Berlin",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "Hartmann Compound Professionals",
+    "name": "Hartmann Compound Professionals - Bochum",
+    "address": "Arnoldschacht 9-11, 44894 Bochum",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "BLG",
+    "name": "BLG - Bremerhaven",
+    "address": "Senator-Borttscheller-Straße 1, 27568 Bremerhaven",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "Autokontor Bayern GmbH",
+    "name": "Autokontor Bayern GmbH - Buch",
+    "address": "Lehmgrube 1, 89290 Buch",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "DP Trading & Consulting",
+    "name": "DP Trading & Consulting - Calden",
+    "address": "Flugplatz 50, 34379 Calden",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–Fr 07:00-19:00; Sa–So Closed"
+  },
+  {
+    "company": "Sixt",
+    "name": "Sixt - Chemnitz - City",
+    "address": "Salzstraße 1-3, 09113 Chemnitz",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "Avis",
+    "name": "Avis - Chemnitz - City",
+    "address": "Neefestraße 86A, 09116 Chemnitz",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–Fr 07:00-17:00; Sa 08:00-10:00; So Closed"
+  },
+  {
+    "company": "Avis",
+    "name": "Avis - Cottbus - City",
+    "address": "Madlower Hauptstraße 67, 03050 Cottbus",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–Fr 08:00-17:00; Sa 08:00-10:00; So Unknown"
+  },
+  {
+    "company": "MOSOLF Port Logistics & Services GmbH",
+    "name": "MOSOLF - Cuxhaven",
+    "address": "Neufelder Str. 92, 27472 Cuxhaven",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "Hartmann Compound Professionals",
+    "name": "Hartmann Compound Professionals - Dorfmark",
+    "address": "Leerenstrasse 25, 29683, Dorfmark",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "Autokontor Bayern GmbH",
+    "name": "Autokontor Bayern GmbH - Dortmund",
+    "address": "Dammstraße 25, 44145 Dortmund",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "Sixt",
+    "name": "Sixt - Dresden - Central Station",
+    "address": "Pragerstr. 2",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So 06:00-22:00"
+  },
+  {
+    "company": "Sixt",
+    "name": "Sixt - Dresden - Airport",
+    "address": "Wilhelmine-Reichard-Ring 1",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–Fr 07:00-23:30; Sa 09:00-22:30; So 09:00-23:15"
+  },
+  {
+    "company": "Avis",
+    "name": "Avis - Dresden - City",
+    "address": "Friedrichstraße 24, 01067 Dresden",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–Fr 08:00-17:00; Sa 08:00-11:00; So Closed"
+  },
+  {
+    "company": "Europcar",
+    "name": "Europcar - Dresden - Transporter - LKW - PKW",
+    "address": "Hauboldstraße 5, 01239 Dresden",
+    "maps_link": "",
+    "phone": "03518282400",
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "BLG",
+    "name": "BLG - Duisburg",
+    "address": "Rotterdamer Str. 100, 47229 Duisburg",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "MOSOLF Automotive Releasing Solutions GmbH",
+    "name": "MOSOLF - Düsseldorf",
+    "address": "Weizenmühlenstraße 9-17, 40221 Düsseldorf",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "MOSOLF Releasing Solutions GmbH",
+    "name": "MOSOLF - Eisenach",
+    "address": "Adam-Opel-Straße 100, 99817 Eisenach",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "Sixt",
+    "name": "Sixt - Erfurt - City",
+    "address": "Demminer Str. 6a, 99091 Erfurt",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "Roos Vehicle Logistics GmbH",
+    "name": "Roos Vehicle Logistics GmbH - Faulbach",
+    "address": "Am Kieswerk 1, 97906 Faulbach",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–Fr 07:00-21:00; Sa–So Closed"
+  },
+  {
+    "company": "MOSOLF Logistics & Services GmbH",
+    "name": "MOSOLF - Germersheim",
+    "address": "Mercedes-Benz-Str. 1, 76726 Germersheim",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "SAT Sächsische Autotransport und Service GmbH",
+    "name": "SAT Sächsische Autotransport und Service GmbH - Glauchau",
+    "address": "Am Schafteich 1, 08371 Glauchau",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "Autokontor Bayern GmbH",
+    "name": "Autokontor Bayern GmbH - Großzöberitz",
+    "address": "Rödgener Str. 12, 06780 Großzöberitz",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "Sixt",
+    "name": "Sixt - Görlitz - Bahnhof",
+    "address": "Bahnhofstraße 74, 02826 Görlitz",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "SAT Sächsische Autotransport und Service GmbH",
+    "name": "SAT Sächsische Autotransport und Service GmbH - Gößnitz",
+    "address": "Walter-Rabold-Straße 52, 04639 Gößnitz",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "ARS Altmann AG Automobillogistik",
+    "name": "ARS Altmann AG Automobillogistik - Hodenhagen",
+    "address": "Lilienthalstraße 2, 29693 Hodenhagen",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "MOSOLF Logistics & Services GmbH",
+    "name": "MOSOLF - Illingen",
+    "address": "Wilhelmstraße 115, 75428 Illingen",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "Hapitec GmbH",
+    "name": "Hapitec GmbH - Inden",
+    "address": "In der Ruraue 28, 52459 Inden",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "MOSOLF Logistics & Services GmbH",
+    "name": "MOSOLF - Ketzin",
+    "address": "Gewerbegebiet Etzin, 14669 Ketzin",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So 00:00-00:00"
+  },
+  {
+    "company": "MOSOLF Special Vehicles GmbH",
+    "name": "MOSOLF Special Vehicles GmbH - Kippenheim",
+    "address": "Freimatte 28, 77971 Kippenheim",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "MOSOLF Logistics & Services GmbH",
+    "name": "MOSOLF - Kippenheim",
+    "address": "Freimatte 25, 77971 Kippenheim",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "MOSOLF SE & Co. KG",
+    "name": "MOSOLF - Kirchheim/Teck",
+    "address": "Dettinger Straße 157 – 159, 73230 Kirchheim/Teck",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "Autokontor Bayern GmbH",
+    "name": "Autokontor Bayern GmbH - Kitzingen",
+    "address": "Steigweg 24, 97318 Kitzingen",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "MOSOLF Automotive Releasing Solutions GmbH",
+    "name": "MOSOLF - Kornwestheim",
+    "address": "Rangierbahnhof 60, 70806 Kornwestheim",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "B&T Solutions GmbH",
+    "name": "MOSOLF - Korschenbroich",
+    "address": "Wankelstraße 12 – 14, 41352 Korschenbroich",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "Europcar",
+    "name": "Europcar - Leipzig - Transporter LKW-PKW",
+    "address": "Lützner Str. 179, 04179 Leipzig",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–Fr 07:30-18:00; Sa 08:00-12:00; So Closed"
+  },
+  {
+    "company": "MOSOLF Automotive Releasing Solutions GmbH",
+    "name": "MOSOLF - Leipzig",
+    "address": "Porschestraße 1, 04158 Leipzig",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "Autokontor Bayern GmbH",
+    "name": "Autokontor Bayern GmbH - Lüdersfeld",
+    "address": "Schachtstraße 2, 31702 Lüdersfeld",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "Hartmann Compound Professionals",
+    "name": "Hartmann Compound Professionals - Niederaula - Niederaula Fleet Center 1",
+    "address": "Jossastraße 60, 36272 Niederaula",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "Hartmann Compound Professionals",
+    "name": "Hartmann Compound Professionals - Niederaula - Niederaula Fleet Center 2",
+    "address": "Industriestraße 11, 36272 Niederaula",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "Auto Siegl Pkw-Spezialtransporte GmbH",
+    "name": "Auto Siegl Pkw-Spezialtransporte GmbH - Oberdolling",
+    "address": "Bergstraße 10/1/2, 85129 Oberdolling",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "SAT Sächsische Autotransport und Service GmbH",
+    "name": "SAT Sächsische Autotransport und Service GmbH - Rackwitz",
+    "address": "August-Horch-Straße 1, 04519 Rackwitz",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "ARS Altmann AG Automobillogistik",
+    "name": "ARS Altmann AG Automobillogistik - Riedstadt",
+    "address": "Römerstraße 3, 64560 Riedstadt",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "MOSOLF Automotive Releasing Solutions GmbH",
+    "name": "MOSOLF - Rüsselsheim",
+    "address": "Im Kleinen Feld / Opel Tor P15, 65428 Rüsselsheim",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "Saar-Auto-Service Mosolf GmbH",
+    "name": "MOSOLF - Saarlouis",
+    "address": "Carl-Zeiss-Straße 27, 66740 Saarlouis",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "Autokontor Bayern GmbH",
+    "name": "Autokontor Bayern GmbH - Schweitenkirchen",
+    "address": "Otto-Hahn-Ring 6, 85301 Schweitenkirchen",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "Autokontor Bayern GmbH",
+    "name": "Autokontor Bayern GmbH - Schöneck",
+    "address": "Windecker Straße 2, 61137 Schöneck",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "MOSOLF Port Logistics & Services GmbH",
+    "name": "MOSOLF - Wesel",
+    "address": "Zum Rhein-Lippe-Hafen 10, 46485 Wesel",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "MOSOLF Port Logistics & Services GmbH",
+    "name": "MOSOLF - Wilhelmshaven",
+    "address": "Indik 2, 26388 Wilhelmshaven",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "MOSOLF Logistics & Services GmbH",
+    "name": "MOSOLF - Wolfsburg",
+    "address": "Bremerslust 1, 38442 Wolfsburg",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "Autokontor Bayern GmbH",
+    "name": "Autokontor Bayern GmbH - Zörbig",
+    "address": "Jeßnitzer Str. 26, 06780 Zörbig",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So Unknown"
+  },
+  {
+    "company": "MOSOLF Logistics & Services GmbH",
+    "name": "MOSOLF - Überherrn",
+    "address": "Langwies 101, 66802 Überherrn",
+    "maps_link": "",
+    "phone": null,
+    "hours": "Mo–So 00:00-00:00"
+  }
+]

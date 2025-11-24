@@ -1,0 +1,34 @@
+[
+  {
+    "company": "Sixt",
+    "name": "Central Station",
+    "address": "Prager Str. 2, 01069 Dresden",
+    "maps_link": "https://maps.app.goo.gl/KsCVqbeZrcfiaThf9",
+    "phone": "+49 89 66060060",
+    "hours": "Mo–So 06:00–22:00"
+  },
+  {
+    "company": "Europcar",
+    "name": "City",
+    "address": "Strehlener Str. 5, 01069 Dresden",
+    "maps_link": "https://maps.app.goo.gl/NwgjbjUKir6pfUvn8",
+    "phone": "+49 351 877320",
+    "hours": "Mo-Fr 07:00-00:00; Sa 08:00-00:00; So 09:00-00:00"
+  },
+  {
+    "company": "Enterprise",
+    "name": "Friedrichstadt",
+    "address": "Friedrichstr. 65, 01067 Dresden",
+    "maps_link": "https://maps.app.goo.gl/aG1qqcnWKzLrt2sT9",
+    "phone": "+49 351 205770",
+    "hours": "Mo-Fr 08:00–18:00; Sa-So 09:00-12:00"
+  },
+  {
+    "company": "Avis",
+    "name": "Downtown",
+    "address": "Friedrichstr. 24, 01067 Dresden",
+    "maps_link": "https://maps.app.goo.gl/JiFMWpJXV49bzo1c6",
+    "phone": "+49 351 4969613",
+    "hours": "Mo–Fr 08:00-17:00; Sa 08:00-11:00"
+  }
+]
