@@ -1,0 +1,1862 @@
+[
+    {
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "app_label": "admin",
+            "model": "logentry"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "app_label": "auth",
+            "model": "permission"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "app_label": "auth",
+            "model": "group"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "app_label": "auth",
+            "model": "user"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "app_label": "contenttypes",
+            "model": "contenttype"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "app_label": "sessions",
+            "model": "session"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "app_label": "locations",
+            "model": "country"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "app_label": "locations",
+            "model": "location"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "app_label": "locations",
+            "model": "publicholiday"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "app_label": "locations",
+            "model": "regionalhours"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "app_label": "locations",
+            "model": "site"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "app_label": "locations",
+            "model": "region"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "app_label": "locations",
+            "model": "locationexception"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "app_label": "locations",
+            "model": "siteexception"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "app_label": "locations",
+            "model": "defaulthours"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "app_label": "locations",
+            "model": "company"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "owi6qg23gqeztm6llrjlbsp6py533512",
+        "fields": {
+            "session_data": ".eJxVjDsOwjAQRO_iGlmOF3-gpM8ZrPXuBgeQI8VJhbg7iZQCNN28N_NWCdelpLXJnEZWV9Wp02-XkZ5Sd8APrPdJ01SXecx6V_RBm-4nltftcP8OCrayrSVcjGcLAaxHYBoAIkgAE0IgF4VtdobOwA7Ae8GI3ZDREDGYLVZ9vsolN14:1vNBVe:usM-dE3DuWPSIVvZGhhwKUEIoHedxwjKtC2yClBXcJE",
+            "expire_date": "2025-12-07T14:56:14.913Z"
+        }
+    },
+    {
+        "model": "locations.country",
+        "pk": 1,
+        "fields": {
+            "name": "Germany",
+            "code": "DE"
+        }
+    },
+    {
+        "model": "locations.region",
+        "pk": 1,
+        "fields": {
+            "name": "Sachsen",
+            "country": 1
+        }
+    },
+    {
+        "model": "locations.region",
+        "pk": 2,
+        "fields": {
+            "name": "Thüringen",
+            "country": 1
+        }
+    },
+    {
+        "model": "locations.region",
+        "pk": 3,
+        "fields": {
+            "name": "Sachsen-Anhalt",
+            "country": 1
+        }
+    },
+    {
+        "model": "locations.region",
+        "pk": 4,
+        "fields": {
+            "name": "Bayern",
+            "country": 1
+        }
+    },
+    {
+        "model": "locations.location",
+        "pk": 1,
+        "fields": {
+            "name": "Dresden",
+            "region": 1
+        }
+    },
+    {
+        "model": "locations.location",
+        "pk": 2,
+        "fields": {
+            "name": "Leipzig",
+            "region": 1
+        }
+    },
+    {
+        "model": "locations.location",
+        "pk": 3,
+        "fields": {
+            "name": "Glauchau",
+            "region": 1
+        }
+    },
+    {
+        "model": "locations.location",
+        "pk": 4,
+        "fields": {
+            "name": "Gößnitz",
+            "region": 2
+        }
+    },
+    {
+        "model": "locations.location",
+        "pk": 5,
+        "fields": {
+            "name": "Zörbig",
+            "region": 3
+        }
+    },
+    {
+        "model": "locations.location",
+        "pk": 6,
+        "fields": {
+            "name": "Faulbach",
+            "region": 4
+        }
+    },
+    {
+        "model": "locations.company",
+        "pk": 1,
+        "fields": {
+            "name": "Sixt"
+        }
+    },
+    {
+        "model": "locations.company",
+        "pk": 2,
+        "fields": {
+            "name": "Avis"
+        }
+    },
+    {
+        "model": "locations.company",
+        "pk": 3,
+        "fields": {
+            "name": "Mosolf"
+        }
+    },
+    {
+        "model": "locations.company",
+        "pk": 4,
+        "fields": {
+            "name": "Roos Vehicle Logistics GmbH"
+        }
+    },
+    {
+        "model": "locations.company",
+        "pk": 5,
+        "fields": {
+            "name": "Europcar"
+        }
+    },
+    {
+        "model": "locations.site",
+        "pk": 1,
+        "fields": {
+            "company": 1,
+            "name": "Central Station",
+            "location": 1,
+            "address": "Pragerstr. 2",
+            "zip_code": "01069",
+            "google_place_id": null
+        }
+    },
+    {
+        "model": "locations.site",
+        "pk": 2,
+        "fields": {
+            "company": 1,
+            "name": "Airport",
+            "location": 1,
+            "address": "Wilhelmine-Reichard-Ring 1",
+            "zip_code": "01109",
+            "google_place_id": null
+        }
+    },
+    {
+        "model": "locations.site",
+        "pk": 3,
+        "fields": {
+            "company": 4,
+            "name": null,
+            "location": 6,
+            "address": "Am Kieswerk 1, 97906 Faulbach",
+            "zip_code": "97906",
+            "google_place_id": null
+        }
+    },
+    {
+        "model": "locations.site",
+        "pk": 4,
+        "fields": {
+            "company": 5,
+            "name": "Transporter LKW-PKW",
+            "location": 2,
+            "address": "Lützner Str. 179, 04179 Leipzig",
+            "zip_code": "04179",
+            "google_place_id": null
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 1,
+        "fields": {
+            "site": 1,
+            "weekday": 0,
+            "open_time": "06:00:00",
+            "close_time": "22:00:00",
+            "is_closed": false
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 2,
+        "fields": {
+            "site": 1,
+            "weekday": 1,
+            "open_time": "06:00:00",
+            "close_time": "22:00:00",
+            "is_closed": false
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 3,
+        "fields": {
+            "site": 1,
+            "weekday": 2,
+            "open_time": "06:00:00",
+            "close_time": "22:00:00",
+            "is_closed": false
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 4,
+        "fields": {
+            "site": 1,
+            "weekday": 3,
+            "open_time": "06:00:00",
+            "close_time": "22:00:00",
+            "is_closed": false
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 5,
+        "fields": {
+            "site": 1,
+            "weekday": 4,
+            "open_time": "06:00:00",
+            "close_time": "22:00:00",
+            "is_closed": false
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 6,
+        "fields": {
+            "site": 1,
+            "weekday": 5,
+            "open_time": "06:00:00",
+            "close_time": "22:00:00",
+            "is_closed": false
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 7,
+        "fields": {
+            "site": 1,
+            "weekday": 6,
+            "open_time": "06:00:00",
+            "close_time": "22:00:00",
+            "is_closed": false
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 8,
+        "fields": {
+            "site": 2,
+            "weekday": 0,
+            "open_time": "07:00:00",
+            "close_time": "23:30:00",
+            "is_closed": false
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 9,
+        "fields": {
+            "site": 2,
+            "weekday": 1,
+            "open_time": "07:00:00",
+            "close_time": "23:30:00",
+            "is_closed": false
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 10,
+        "fields": {
+            "site": 2,
+            "weekday": 2,
+            "open_time": "07:00:00",
+            "close_time": "23:30:00",
+            "is_closed": false
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 11,
+        "fields": {
+            "site": 2,
+            "weekday": 3,
+            "open_time": "07:00:00",
+            "close_time": "23:30:00",
+            "is_closed": false
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 12,
+        "fields": {
+            "site": 2,
+            "weekday": 4,
+            "open_time": "07:00:00",
+            "close_time": "23:30:00",
+            "is_closed": false
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 13,
+        "fields": {
+            "site": 2,
+            "weekday": 5,
+            "open_time": "09:00:00",
+            "close_time": "22:30:00",
+            "is_closed": false
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 14,
+        "fields": {
+            "site": 2,
+            "weekday": 6,
+            "open_time": "09:00:00",
+            "close_time": "23:15:00",
+            "is_closed": false
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 15,
+        "fields": {
+            "site": 3,
+            "weekday": 0,
+            "open_time": "07:00:00",
+            "close_time": "21:00:00",
+            "is_closed": false
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 16,
+        "fields": {
+            "site": 3,
+            "weekday": 1,
+            "open_time": "07:00:00",
+            "close_time": "21:00:00",
+            "is_closed": false
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 17,
+        "fields": {
+            "site": 3,
+            "weekday": 2,
+            "open_time": "07:00:00",
+            "close_time": "21:00:00",
+            "is_closed": false
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 18,
+        "fields": {
+            "site": 3,
+            "weekday": 3,
+            "open_time": "07:00:00",
+            "close_time": "21:00:00",
+            "is_closed": false
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 19,
+        "fields": {
+            "site": 3,
+            "weekday": 4,
+            "open_time": "07:00:00",
+            "close_time": "21:00:00",
+            "is_closed": false
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 22,
+        "fields": {
+            "site": 3,
+            "weekday": 5,
+            "open_time": null,
+            "close_time": null,
+            "is_closed": true
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 23,
+        "fields": {
+            "site": 3,
+            "weekday": 6,
+            "open_time": null,
+            "close_time": null,
+            "is_closed": true
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 24,
+        "fields": {
+            "site": 4,
+            "weekday": 0,
+            "open_time": "07:30:00",
+            "close_time": "18:00:00",
+            "is_closed": false
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 25,
+        "fields": {
+            "site": 4,
+            "weekday": 1,
+            "open_time": "07:30:00",
+            "close_time": "18:00:00",
+            "is_closed": false
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 26,
+        "fields": {
+            "site": 4,
+            "weekday": 2,
+            "open_time": "07:30:00",
+            "close_time": "18:00:00",
+            "is_closed": false
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 27,
+        "fields": {
+            "site": 4,
+            "weekday": 3,
+            "open_time": "07:30:00",
+            "close_time": "18:00:00",
+            "is_closed": false
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 28,
+        "fields": {
+            "site": 4,
+            "weekday": 4,
+            "open_time": "07:30:00",
+            "close_time": "18:00:00",
+            "is_closed": false
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 29,
+        "fields": {
+            "site": 4,
+            "weekday": 5,
+            "open_time": "08:00:00",
+            "close_time": "12:00:00",
+            "is_closed": false
+        }
+    },
+    {
+        "model": "locations.defaulthours",
+        "pk": 30,
+        "fields": {
+            "site": 4,
+            "weekday": 6,
+            "open_time": null,
+            "close_time": null,
+            "is_closed": true
+        }
+    },
+    {
+        "model": "locations.siteexception",
+        "pk": 1,
+        "fields": {
+            "site": 3,
+            "date": "2025-12-12",
+            "open_time": "07:00:00",
+            "close_time": "17:00:00",
+            "reason": "eingeschränkte Fahrzeugannahme (letzte Einfahrt 16:30)"
+        }
+    },
+    {
+        "model": "locations.siteexception",
+        "pk": 2,
+        "fields": {
+            "site": 3,
+            "date": "2025-12-29",
+            "open_time": "07:00:00",
+            "close_time": "17:00:00",
+            "reason": "eingeschränkte Fahrzeugannahme (letzte Einfahrt 16:30)"
+        }
+    },
+    {
+        "model": "locations.siteexception",
+        "pk": 3,
+        "fields": {
+            "site": 3,
+            "date": "2025-12-30",
+            "open_time": "07:00:00",
+            "close_time": "17:00:00",
+            "reason": "eingeschränkte Fahrzeugannahme (letzte Einfahrt 16:30)"
+        }
+    },
+    {
+        "model": "locations.siteexception",
+        "pk": 4,
+        "fields": {
+            "site": 3,
+            "date": "2026-01-05",
+            "open_time": "07:00:00",
+            "close_time": "17:00:00",
+            "reason": "eingeschränkte Fahrzeugannahme (letzte Einfahrt 16:30)"
+        }
+    },
+    {
+        "model": "locations.publicholiday",
+        "pk": 1,
+        "fields": {
+            "country": 1,
+            "region": 1,
+            "date": "2025-11-19",
+            "name": "Buß- und Bettag"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": [
+                "admin",
+                "logentry"
+            ],
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": [
+                "admin",
+                "logentry"
+            ],
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": [
+                "admin",
+                "logentry"
+            ],
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": [
+                "admin",
+                "logentry"
+            ],
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add permission",
+            "content_type": [
+                "auth",
+                "permission"
+            ],
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change permission",
+            "content_type": [
+                "auth",
+                "permission"
+            ],
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": [
+                "auth",
+                "permission"
+            ],
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view permission",
+            "content_type": [
+                "auth",
+                "permission"
+            ],
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add group",
+            "content_type": [
+                "auth",
+                "group"
+            ],
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change group",
+            "content_type": [
+                "auth",
+                "group"
+            ],
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete group",
+            "content_type": [
+                "auth",
+                "group"
+            ],
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view group",
+            "content_type": [
+                "auth",
+                "group"
+            ],
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add user",
+            "content_type": [
+                "auth",
+                "user"
+            ],
+            "codename": "add_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change user",
+            "content_type": [
+                "auth",
+                "user"
+            ],
+            "codename": "change_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete user",
+            "content_type": [
+                "auth",
+                "user"
+            ],
+            "codename": "delete_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view user",
+            "content_type": [
+                "auth",
+                "user"
+            ],
+            "codename": "view_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add content type",
+            "content_type": [
+                "contenttypes",
+                "contenttype"
+            ],
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change content type",
+            "content_type": [
+                "contenttypes",
+                "contenttype"
+            ],
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": [
+                "contenttypes",
+                "contenttype"
+            ],
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view content type",
+            "content_type": [
+                "contenttypes",
+                "contenttype"
+            ],
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add session",
+            "content_type": [
+                "sessions",
+                "session"
+            ],
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change session",
+            "content_type": [
+                "sessions",
+                "session"
+            ],
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete session",
+            "content_type": [
+                "sessions",
+                "session"
+            ],
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view session",
+            "content_type": [
+                "sessions",
+                "session"
+            ],
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add country",
+            "content_type": [
+                "locations",
+                "country"
+            ],
+            "codename": "add_country"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change country",
+            "content_type": [
+                "locations",
+                "country"
+            ],
+            "codename": "change_country"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete country",
+            "content_type": [
+                "locations",
+                "country"
+            ],
+            "codename": "delete_country"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view country",
+            "content_type": [
+                "locations",
+                "country"
+            ],
+            "codename": "view_country"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add location",
+            "content_type": [
+                "locations",
+                "location"
+            ],
+            "codename": "add_location"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change location",
+            "content_type": [
+                "locations",
+                "location"
+            ],
+            "codename": "change_location"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete location",
+            "content_type": [
+                "locations",
+                "location"
+            ],
+            "codename": "delete_location"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view location",
+            "content_type": [
+                "locations",
+                "location"
+            ],
+            "codename": "view_location"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add public holiday",
+            "content_type": [
+                "locations",
+                "publicholiday"
+            ],
+            "codename": "add_publicholiday"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change public holiday",
+            "content_type": [
+                "locations",
+                "publicholiday"
+            ],
+            "codename": "change_publicholiday"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete public holiday",
+            "content_type": [
+                "locations",
+                "publicholiday"
+            ],
+            "codename": "delete_publicholiday"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view public holiday",
+            "content_type": [
+                "locations",
+                "publicholiday"
+            ],
+            "codename": "view_publicholiday"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add regional hours",
+            "content_type": [
+                "locations",
+                "regionalhours"
+            ],
+            "codename": "add_regionalhours"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change regional hours",
+            "content_type": [
+                "locations",
+                "regionalhours"
+            ],
+            "codename": "change_regionalhours"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete regional hours",
+            "content_type": [
+                "locations",
+                "regionalhours"
+            ],
+            "codename": "delete_regionalhours"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view regional hours",
+            "content_type": [
+                "locations",
+                "regionalhours"
+            ],
+            "codename": "view_regionalhours"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add site",
+            "content_type": [
+                "locations",
+                "site"
+            ],
+            "codename": "add_site"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change site",
+            "content_type": [
+                "locations",
+                "site"
+            ],
+            "codename": "change_site"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete site",
+            "content_type": [
+                "locations",
+                "site"
+            ],
+            "codename": "delete_site"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view site",
+            "content_type": [
+                "locations",
+                "site"
+            ],
+            "codename": "view_site"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add region",
+            "content_type": [
+                "locations",
+                "region"
+            ],
+            "codename": "add_region"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change region",
+            "content_type": [
+                "locations",
+                "region"
+            ],
+            "codename": "change_region"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete region",
+            "content_type": [
+                "locations",
+                "region"
+            ],
+            "codename": "delete_region"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view region",
+            "content_type": [
+                "locations",
+                "region"
+            ],
+            "codename": "view_region"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add location exception",
+            "content_type": [
+                "locations",
+                "locationexception"
+            ],
+            "codename": "add_locationexception"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change location exception",
+            "content_type": [
+                "locations",
+                "locationexception"
+            ],
+            "codename": "change_locationexception"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete location exception",
+            "content_type": [
+                "locations",
+                "locationexception"
+            ],
+            "codename": "delete_locationexception"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view location exception",
+            "content_type": [
+                "locations",
+                "locationexception"
+            ],
+            "codename": "view_locationexception"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add site exception",
+            "content_type": [
+                "locations",
+                "siteexception"
+            ],
+            "codename": "add_siteexception"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change site exception",
+            "content_type": [
+                "locations",
+                "siteexception"
+            ],
+            "codename": "change_siteexception"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete site exception",
+            "content_type": [
+                "locations",
+                "siteexception"
+            ],
+            "codename": "delete_siteexception"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view site exception",
+            "content_type": [
+                "locations",
+                "siteexception"
+            ],
+            "codename": "view_siteexception"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add default hours",
+            "content_type": [
+                "locations",
+                "defaulthours"
+            ],
+            "codename": "add_defaulthours"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change default hours",
+            "content_type": [
+                "locations",
+                "defaulthours"
+            ],
+            "codename": "change_defaulthours"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete default hours",
+            "content_type": [
+                "locations",
+                "defaulthours"
+            ],
+            "codename": "delete_defaulthours"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view default hours",
+            "content_type": [
+                "locations",
+                "defaulthours"
+            ],
+            "codename": "view_defaulthours"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can add company",
+            "content_type": [
+                "locations",
+                "company"
+            ],
+            "codename": "add_company"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can change company",
+            "content_type": [
+                "locations",
+                "company"
+            ],
+            "codename": "change_company"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can delete company",
+            "content_type": [
+                "locations",
+                "company"
+            ],
+            "codename": "delete_company"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "fields": {
+            "name": "Can view company",
+            "content_type": [
+                "locations",
+                "company"
+            ],
+            "codename": "view_company"
+        }
+    },
+    {
+        "model": "auth.user",
+        "fields": {
+            "password": "pbkdf2_sha256$600000$O4RgxrvOfkNDy0kBaHGSC0$ESQPcuEaQEzId5sNMRHvfXj2bVJfeai490umFKOfvtc=",
+            "last_login": "2025-11-23T14:56:14.912Z",
+            "is_superuser": true,
+            "username": "marin",
+            "first_name": "",
+            "last_name": "",
+            "email": "cord_marin@hotmail.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2025-11-23T14:55:57.754Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2025-11-23T14:56:32.577Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "country"
+            ],
+            "object_id": "1",
+            "object_repr": "Germany",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 2,
+        "fields": {
+            "action_time": "2025-11-23T14:56:48.233Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "region"
+            ],
+            "object_id": "1",
+            "object_repr": "Sachsen, DE",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 3,
+        "fields": {
+            "action_time": "2025-11-23T14:56:54.000Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "region"
+            ],
+            "object_id": "2",
+            "object_repr": "Thüringen, DE",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 4,
+        "fields": {
+            "action_time": "2025-11-23T14:59:00.896Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "location"
+            ],
+            "object_id": "1",
+            "object_repr": "Dresden (Sachsen, DE)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2025-11-23T14:59:14.594Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "location"
+            ],
+            "object_id": "2",
+            "object_repr": "Leipzig (Sachsen, DE)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2025-11-23T14:59:23.010Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "location"
+            ],
+            "object_id": "3",
+            "object_repr": "Glauchau (Sachsen, DE)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2025-11-23T14:59:40.887Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "location"
+            ],
+            "object_id": "4",
+            "object_repr": "Gößnitz (Thüringen, DE)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2025-11-23T15:09:23.811Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "company"
+            ],
+            "object_id": "1",
+            "object_repr": "Sixt",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 9,
+        "fields": {
+            "action_time": "2025-11-23T15:09:27.276Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "company"
+            ],
+            "object_id": "2",
+            "object_repr": "Avis",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 10,
+        "fields": {
+            "action_time": "2025-11-23T15:09:33.094Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "company"
+            ],
+            "object_id": "3",
+            "object_repr": "Mosolf",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 11,
+        "fields": {
+            "action_time": "2025-11-23T15:10:12.063Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "region"
+            ],
+            "object_id": "3",
+            "object_repr": "Sachsen-Anhalt, DE",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 12,
+        "fields": {
+            "action_time": "2025-11-23T15:10:22.427Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "location"
+            ],
+            "object_id": "5",
+            "object_repr": "Zörbig (Sachsen-Anhalt, DE)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 13,
+        "fields": {
+            "action_time": "2025-11-23T15:17:50.489Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "site"
+            ],
+            "object_id": "1",
+            "object_repr": "Site object (1)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"default hours\", \"object\": \"Central Station - Monday: 06:00:00-22:00:00\"}}, {\"added\": {\"name\": \"default hours\", \"object\": \"Central Station - Tuesday: 06:00:00-22:00:00\"}}, {\"added\": {\"name\": \"default hours\", \"object\": \"Central Station - Wednesday: 06:00:00-22:00:00\"}}, {\"added\": {\"name\": \"default hours\", \"object\": \"Central Station - Thursday: 06:00:00-22:00:00\"}}, {\"added\": {\"name\": \"default hours\", \"object\": \"Central Station - Friday: 06:00:00-22:00:00\"}}, {\"added\": {\"name\": \"default hours\", \"object\": \"Central Station - Saturday: 06:00:00-22:00:00\"}}, {\"added\": {\"name\": \"default hours\", \"object\": \"Central Station - Sunday: 06:00:00-22:00:00\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 14,
+        "fields": {
+            "action_time": "2025-11-23T15:25:34.565Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "site"
+            ],
+            "object_id": "2",
+            "object_repr": "Sixt - Dresden - Airport",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"default hours\", \"object\": \"Airport - Monday: 07:00:00-23:30:00\"}}, {\"added\": {\"name\": \"default hours\", \"object\": \"Airport - Tuesday: 07:00:00-23:30:00\"}}, {\"added\": {\"name\": \"default hours\", \"object\": \"Airport - Wednesday: 07:00:00-23:30:00\"}}, {\"added\": {\"name\": \"default hours\", \"object\": \"Airport - Thursday: 07:00:00-23:30:00\"}}, {\"added\": {\"name\": \"default hours\", \"object\": \"Airport - Friday: 07:00:00-23:30:00\"}}, {\"added\": {\"name\": \"default hours\", \"object\": \"Airport - Saturday: 09:00:00-22:30:00\"}}, {\"added\": {\"name\": \"default hours\", \"object\": \"Airport - Sunday: 09:00:00-23:15:00\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 15,
+        "fields": {
+            "action_time": "2025-11-23T15:27:16.092Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "publicholiday"
+            ],
+            "object_id": "1",
+            "object_repr": "PublicHoliday object (1)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 16,
+        "fields": {
+            "action_time": "2025-11-23T15:28:47.657Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "publicholiday"
+            ],
+            "object_id": "1",
+            "object_repr": "PublicHoliday object (1)",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 17,
+        "fields": {
+            "action_time": "2025-11-23T15:31:02.444Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "publicholiday"
+            ],
+            "object_id": "1",
+            "object_repr": "Buß- und Bettag (Sachsen): 2025-11-19",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 18,
+        "fields": {
+            "action_time": "2025-11-23T15:31:35.296Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "region"
+            ],
+            "object_id": "4",
+            "object_repr": "Bayern, DE",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 19,
+        "fields": {
+            "action_time": "2025-11-23T15:31:38.971Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "location"
+            ],
+            "object_id": "6",
+            "object_repr": "Faulbach (Bayern, DE)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 20,
+        "fields": {
+            "action_time": "2025-11-23T15:32:21.379Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "company"
+            ],
+            "object_id": "4",
+            "object_repr": "Roos Vehicle Logistics GmbH",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 21,
+        "fields": {
+            "action_time": "2025-11-23T15:42:38.182Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "site"
+            ],
+            "object_id": "3",
+            "object_repr": "Roos Vehicle Logistics GmbH - Faulbach - None",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"default hours\", \"object\": \"None - Monday: 07:00:00-21:00:00\"}}, {\"added\": {\"name\": \"default hours\", \"object\": \"None - Tuesday: 07:00:00-21:00:00\"}}, {\"added\": {\"name\": \"default hours\", \"object\": \"None - Wednesday: 07:00:00-21:00:00\"}}, {\"added\": {\"name\": \"default hours\", \"object\": \"None - Thursday: 07:00:00-21:00:00\"}}, {\"added\": {\"name\": \"default hours\", \"object\": \"None - Friday: 07:00:00-21:00:00\"}}, {\"added\": {\"name\": \"default hours\", \"object\": \"None - Saturday: 16:40:52-16:42:27\"}}, {\"added\": {\"name\": \"default hours\", \"object\": \"None - Sunday: 16:42:29-16:42:30\"}}, {\"added\": {\"name\": \"site exception\", \"object\": \"None (2025-12-12): 07:00:00-17:00:00 - eingeschr\\u00e4nkte Fahrzeugannahme (letzte Einfahrt 16:30)\"}}, {\"added\": {\"name\": \"site exception\", \"object\": \"None (2025-12-29): 07:00:00-17:00:00 - eingeschr\\u00e4nkte Fahrzeugannahme (letzte Einfahrt 16:30)\"}}, {\"added\": {\"name\": \"site exception\", \"object\": \"None (2025-12-30): 07:00:00-17:00:00 - eingeschr\\u00e4nkte Fahrzeugannahme (letzte Einfahrt 16:30)\"}}, {\"added\": {\"name\": \"site exception\", \"object\": \"None (2026-01-05): 07:00:00-17:00:00 - eingeschr\\u00e4nkte Fahrzeugannahme (letzte Einfahrt 16:30)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 22,
+        "fields": {
+            "action_time": "2025-11-23T15:45:50.919Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "site"
+            ],
+            "object_id": "3",
+            "object_repr": "Roos Vehicle Logistics GmbH - Faulbach - None",
+            "action_flag": 2,
+            "change_message": "[{\"deleted\": {\"name\": \"default hours\", \"object\": \"None - Saturday: 16:40:52-16:42:27\"}}, {\"deleted\": {\"name\": \"default hours\", \"object\": \"None - Sunday: 16:42:29-16:42:30\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 23,
+        "fields": {
+            "action_time": "2025-11-23T15:46:20.471Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "site"
+            ],
+            "object_id": "3",
+            "object_repr": "Roos Vehicle Logistics GmbH - Faulbach - None",
+            "action_flag": 2,
+            "change_message": "[{\"added\": {\"name\": \"default hours\", \"object\": \"None - Saturday: Closed\"}}, {\"added\": {\"name\": \"default hours\", \"object\": \"None - Sunday: Closed\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 24,
+        "fields": {
+            "action_time": "2025-11-23T16:01:49.522Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "company"
+            ],
+            "object_id": "5",
+            "object_repr": "Europcar",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 25,
+        "fields": {
+            "action_time": "2025-11-23T16:16:44.274Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "site"
+            ],
+            "object_id": "4",
+            "object_repr": "Europcar - Leipzig - Transporter",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 26,
+        "fields": {
+            "action_time": "2025-11-23T16:16:55.708Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "site"
+            ],
+            "object_id": "4",
+            "object_repr": "Europcar - Leipzig - Transporter LKW-PKW",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 27,
+        "fields": {
+            "action_time": "2025-11-23T16:18:15.113Z",
+            "user": [
+                "marin"
+            ],
+            "content_type": [
+                "locations",
+                "site"
+            ],
+            "object_id": "4",
+            "object_repr": "Europcar - Leipzig - Transporter LKW-PKW",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"name\": \"default hours\", \"object\": \"Transporter LKW-PKW - Monday: 07:30:00-18:00:00\", \"fields\": [\"Open time\", \"Close time\"]}}, {\"changed\": {\"name\": \"default hours\", \"object\": \"Transporter LKW-PKW - Tuesday: 07:30:00-18:00:00\", \"fields\": [\"Open time\", \"Close time\"]}}, {\"changed\": {\"name\": \"default hours\", \"object\": \"Transporter LKW-PKW - Wednesday: 07:30:00-18:00:00\", \"fields\": [\"Open time\", \"Close time\"]}}, {\"changed\": {\"name\": \"default hours\", \"object\": \"Transporter LKW-PKW - Thursday: 07:30:00-18:00:00\", \"fields\": [\"Open time\", \"Close time\"]}}, {\"changed\": {\"name\": \"default hours\", \"object\": \"Transporter LKW-PKW - Friday: 07:30:00-18:00:00\", \"fields\": [\"Open time\", \"Close time\"]}}, {\"changed\": {\"name\": \"default hours\", \"object\": \"Transporter LKW-PKW - Saturday: 08:00:00-12:00:00\", \"fields\": [\"Open time\", \"Close time\"]}}, {\"changed\": {\"name\": \"default hours\", \"object\": \"Transporter LKW-PKW - Sunday: Closed\", \"fields\": [\"Is closed\"]}}]"
+        }
+    }
+]

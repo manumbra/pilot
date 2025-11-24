@@ -78,7 +78,7 @@ class SiteExceptionInline(admin.TabularInline):
 @admin.register(Site)
 class SiteAdmin(admin.ModelAdmin):
     list_display = ('company', 'location', 'name', 'address', 'zip_code')
-    list_filter = ('location__region__country', 'location__region', 'location')
+    list_filter = ('company', 'location__region__country', 'location__region', 'location')
     search_fields = ('name', 'address', 'zip_code')
     inlines = [DefaultHoursInline, SiteExceptionInline]
 

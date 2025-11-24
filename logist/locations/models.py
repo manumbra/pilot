@@ -8,13 +8,19 @@ from django.core.validators import RegexValidator
 # -----------------------
 class Country(models.Model):
     name = models.CharField(max_length=100)
-    code = models.CharField(max_length=5, unique=True)  # e.g., 'DE', 'AT'
+    local_name = models.CharField(max_length=100, blank=True, null=True)
+    code = models.CharField(max_length=5, unique=True,blank=True, null=True)  # e.g., 'DE', 'AT'
+    dialing_code = models.CharField(max_length=5, blank=True, null=True)
+    # time_zones = models.CharField(max_length=100)
+    # time_zones = models.CharField(max_length=100)
+    emoji_flag = models.CharField(max_length=10, blank=True, null=True)  # 4–10 is usually enough for flags + complex emoji
 
     class Meta:
         verbose_name_plural = "Countries"
 
     def __str__(self):
-        return self.name
+        # return self.name
+        return f"{self.emoji_flag}{self.name}"
 
 # -----------------------
 # Region Level
@@ -55,7 +61,7 @@ class Company(models.Model):
 # -----------------------
 class Site(models.Model):
     company = models.ForeignKey(Company, on_delete=models.CASCADE, related_name='sites', null=True)
-    name = models.CharField(max_length=200,blank=True, null=True)  # branch/site name
+    name = models.CharField(max_length=200, blank=True, null=True)  # branch/site name
     location = models.ForeignKey(Location, on_delete=models.CASCADE, related_name='sites')
     address = models.TextField(blank=True, null=True)
     zip_code = models.CharField(
@@ -68,6 +74,7 @@ class Site(models.Model):
         null=True
     )
     google_place_id = models.CharField(max_length=200, blank=True, null=True)
+    email = models.EmailField(max_length=254, blank=True, null=True)
     """
     def get_opening_hours(self, check_date):
         # Same logic as before
@@ -124,6 +131,11 @@ class Site(models.Model):
         from datetime import date
         return self.get_opening_hours(date.today())
     
+    def save(self, *args, **kwargs):
+        if self.email:
+            self.email = self.email.lower()
+        super().save(*args, **kwargs)
+
     def __str__(self):
         return f"{self.company.name} - {self.location.name} - {self.name}"
 
